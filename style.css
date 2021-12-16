@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: rgb(26, 26, 26);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.light-images {
+    position: absolute;
+    width: 100%;
+    min-height: 92vh;
+    top: 8vh;
+    display: flex;
+    justify-content: center;
+}
+.off, .on {
+    position: absolute;
+}
+.on {
+    display: none;
+}
+.active-in {
+    display: none;
+}
+.active-out {
+    display: block;
+}
+.button {
+    height: 50px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    transition: all 0.5s ease;
+    position: absolute;
+    bottom: 10vh;
+    background: #c4c4c4;
+}
+.active {
+    background: rgb(0, 187, 16);;
+}
+.button .toggler {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    transition: all 0.5s ease;
+}
+.active .toggler{
+    margin-left: 50px;
+}
